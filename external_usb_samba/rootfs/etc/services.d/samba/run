@@ -72,3 +72,4 @@ EOF
 
 bashio::log.info "Starting Samba daemon..."
 exec smbd --foreground --no-process-group
+

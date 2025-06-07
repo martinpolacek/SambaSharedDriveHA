@@ -9,3 +9,4 @@ if mountpoint -q /mnt/external_disk; then
 fi
 
 bashio::log.info "Samba service stopped."
+

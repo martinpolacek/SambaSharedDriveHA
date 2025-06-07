@@ -1,5 +1,6 @@
 {
-  "name": "External USB Disk Samba Share",
-  "url": "https://github.com/yourusername/ha-samba-addon",
+  "name": "Samba Shared Drive Add-ons",
+  "url": "https://github.com/yourusername/SambaSharedDriveHA",
   "maintainer": "Your Name <your.email@example.com>"
 }
+
