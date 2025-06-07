@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv bashio
+
+bashio::log.info "Stopping Samba daemon..."
+
+# Unmount the external disk
+if mountpoint -q /mnt/external_disk; then
+    bashio::log.info "Unmounting /mnt/external_disk..."
+    umount /mnt/external_disk
+fi
+
+bashio::log.info "Samba service stopped."

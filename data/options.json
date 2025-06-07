@@ -1,0 +1,8 @@
+{
+  "workgroup": "WORKGROUP",
+  "netbiosname": "hassio",
+  "share_name": "external_disk",
+  "guest_ok": true,
+  "read_only": false,
+  "veto_files": "._*/.DS_Store/Thumbs.db/desktop.ini/.Trashes"
+}

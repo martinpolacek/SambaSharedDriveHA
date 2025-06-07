@@ -1,0 +1,5 @@
+{
+  "name": "External USB Disk Samba Share",
+  "url": "https://github.com/yourusername/ha-samba-addon",
+  "maintainer": "Your Name <your.email@example.com>"
+}

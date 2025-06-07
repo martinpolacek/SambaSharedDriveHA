@@ -1,0 +1,39 @@
+name: "External USB Disk Samba Share"
+description: "Share external USB disk (/dev/sda1) via Samba without password"
+version: "1.0.0"
+slug: "external_usb_samba"
+init: false
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+startup: services
+boot: auto
+options:
+  workgroup: "WORKGROUP"
+  netbiosname: "hassio"
+  share_name: "external_disk"
+  guest_ok: true
+  read_only: false
+  veto_files: "._*/.DS_Store/Thumbs.db/desktop.ini/.Trashes"
+schema:
+  workgroup: str
+  netbiosname: str
+  share_name: str
+  guest_ok: bool
+  read_only: bool
+  veto_files: str
+devices:
+  - "/dev/sda1:/dev/sda1:rwm"
+privileged:
+  - SYS_ADMIN
+  - DAC_OVERRIDE
+full_access: true
+host_network: true
+ports:
+  139/tcp: 139
+  445/tcp: 445
+  137/udp: 137
+  138/udp: 138
